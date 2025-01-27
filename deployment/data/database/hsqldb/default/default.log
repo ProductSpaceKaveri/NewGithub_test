@@ -1669,3 +1669,11 @@ INSERT INTO "system$processedqueuetask" VALUES(12947848928697146,54,'Completed',
 DELETE FROM "system$queuedtask" WHERE "id"=4785074604088069
 COMMIT
 /*C3*/ALTER SEQUENCE PUBLIC."system$queuedtask_sequence_mxseq" RESTART WITH 66
+DELETE FROM "system$queuedtask" WHERE "id"=4785074604088202
+INSERT INTO "system$queuedtask" VALUES(4785074604088202,55,'Running','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-CleanupScheduledEvents','[]','7e35b259-53ee-42fe-b81a-2b29fde652d8',60,'2025-01-27 06:20:35.626000','2025-01-27 06:25:34.638000','2025-01-27 06:25:35.143000',0,NULL,'ClusterManagement-CleanupScheduledEvents',NULL)
+COMMIT
+/*C4*/ALTER SEQUENCE PUBLIC."system$queuedtask_sequence_mxseq" RESTART WITH 67
+INSERT INTO "system$queuedtask" VALUES(4785074604089650,66,'Idle','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-CleanupScheduledEvents','[]',NULL,NULL,'2025-01-27 06:25:35.146000','2025-01-27 06:30:34.638000',NULL,0,NULL,'ClusterManagement-CleanupScheduledEvents',NULL)
+INSERT INTO "system$processedqueuetask" VALUES(12947848928697235,55,'Completed','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-CleanupScheduledEvents','[]','7e35b259-53ee-42fe-b81a-2b29fde652d8',60,'2025-01-27 06:20:35.626000','2025-01-27 06:25:34.638000','2025-01-27 06:25:35.143000','2025-01-27 06:25:35.147000',4,0,NULL,'ClusterManagement-CleanupScheduledEvents',NULL)
+DELETE FROM "system$queuedtask" WHERE "id"=4785074604088202
+COMMIT
